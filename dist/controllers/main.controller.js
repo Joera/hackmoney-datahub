@@ -22,12 +22,12 @@ const gatherProposals = (req, res) => __awaiter(void 0, void 0, void 0, function
     res.status(200);
     let data = [];
     try {
-        //   const p1: any = await requests.uniswap(); // .catch( (error) => console.log(error));
+        //   const p1: any = await requests.uniswap(); 
         // const p2 = await requests.compound();
         //  const p3 = await requests.aave();
         // const p4 = await requests.yearn();
-        const p5 = yield requests.snapshotProposals();
-        data = data.concat(p5); //.concat(p2).concat(p3).concat(p4); // .concat(p5);
+        //   const p5 = await requests.snapshotProposals();
+        //   data = data.concat(p5); //.concat(p2).concat(p3).concat(p4); // .concat(p5);
     }
     catch (error) {
         res.status(200); // set http status code for response
